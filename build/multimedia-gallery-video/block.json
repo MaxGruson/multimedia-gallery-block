@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "maxgruson/multimedia-gallery-video",
+  "version": "0.1.0",
+  "title": "Video",
+  "category": "widgets",
+  "icon": "format-video",
+  "description": "Een video-link naar YouTube of Vimeo voor in de multimediagalerij.",
+  "example": {},
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "videoURL": {
+      "type": "string"
+    },
+    "description": {
+      "type": "rich-text"
+    }
+  },
+  "parent": [
+    "maxgruson/multimedia-gallery"
+  ],
+  "textdomain": "multimedia-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

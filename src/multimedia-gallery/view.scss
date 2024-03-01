@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site and in the editor
+*/
+body {
+  .wp-block-maxgruson-multimedia-gallery {
+    margin: 1em 0;
+
+    .multimedia-gallery__list {
+      padding: 0;
+    }
+
+    .splide__pagination__page.is-active {
+      border: #ccc solid 1px;
+    }
+
+    &.splide {
+      .splide__slide:not(.is-active) {
+        pointer-events: none;
+      }
+
+      .img-container {
+        aspect-ratio: initial !important;
+      }
+
+      figure {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      figcaption {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 1.5em;
+        color: white;
+        opacity: .7;
+        text-shadow: #111 1px 1px 3px;
+        pointer-events: none;
+      }
+    }
+
+    &:not(.splide) {
+      .splide__slide {
+        text-align: center;
+      }
+      .multimedia-gallery__link {
+        display: inline-block;
+      }
+      .img-container {
+        max-height: 80vh;
+      }
+    }
+  }
+}

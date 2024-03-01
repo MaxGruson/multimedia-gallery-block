@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+*/
+body, .editor-styles-wrapper {
+  .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block), 
+  .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout {
+    .wp-block-maxgruson-multimedia-gallery-video {
+      margin: 0;
+      height: 100%;
+
+      .img-container {
+        position: relative;
+      }
+      .block-editor-media-placeholder {
+        height: 100%;
+      }
+    
+      .img-container__image {
+        opacity: 1;
+      }
+
+      .components-button {
+        background-color: rgba(255, 255, 255, 0.25);
+      };
+
+      .trash-icon {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        padding: 10px;
+      }
+
+      .components-base-control__help {
+        margin: 0;
+      }
+
+      .components-input-control-prefix-wrapper svg {
+        width: 18px;
+        vertical-align: text-top;
+      }
+    }
+  }
+}

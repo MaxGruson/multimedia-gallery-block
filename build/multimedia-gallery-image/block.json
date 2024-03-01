@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "maxgruson/multimedia-gallery-image",
+  "version": "0.1.0",
+  "title": "Afbeelding",
+  "category": "widgets",
+  "icon": "format-image",
+  "description": "Een foto of illustratie voor in de multimediagalerij.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "imageURL": {
+      "type": "string"
+    },
+    "imageID": {
+      "type": "number"
+    },
+    "description": {
+      "type": "rich-text"
+    }
+  },
+  "parent": [
+    "maxgruson/multimedia-gallery"
+  ],
+  "textdomain": "multimedia-gallery",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}

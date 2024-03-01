@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+*/
+body, .editor-styles-wrapper {
+  .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block), 
+  .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout {
+    .wp-block-maxgruson-multimedia-gallery-image {
+      margin: 0;
+
+      .img-container {
+        position: relative;
+      }
+    
+      .img-container__image {
+        opacity: 1;
+      }
+
+      .trash-icon {
+        position: absolute;
+        right: .5rem;
+        bottom: .5rem;
+        background-color: rgba(255,255,255,0.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/multimedia-gallery/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied in the editor
+*/
+body .wp-block-maxgruson-multimedia-gallery {
+  margin: 1em 0;
+  max-width: 100%;
+}
+body .wp-block-maxgruson-multimedia-gallery > ul {
+  padding-left: 0;
+  list-style-type: none;
+  display: block;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+body .wp-block-maxgruson-multimedia-gallery figcaption {
+  margin: 1em 0 0;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block),
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  max-width: 800px;
+  position: static;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block):has(li:nth-child(2)),
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout:has(li:nth-child(2)) {
+  display: flex;
+  gap: 1em;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 calc(24px + 2em) 1em 1em;
+  position: static;
+  max-width: initial;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block):has(li:nth-child(2)) > *,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout:has(li:nth-child(2)) > * {
+  width: 800px;
+}
+body .components-placeholder__fieldset {
+  flex-basis: 100%;
+}
+body .block-editor-block-list__block .block-list-appender {
+  top: 50%;
+  right: 1em;
+  bottom: initial;
+  translate: 0 -50%;
+  width: auto !important;
+}
+
+/*# sourceMappingURL=index.css.map*/

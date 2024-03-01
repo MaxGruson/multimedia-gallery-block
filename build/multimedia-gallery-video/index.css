@@ -1,0 +1,67 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/multimedia-gallery-video/index.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+*/
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video {
+  margin: 0;
+  height: 100%;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .img-container,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .img-container, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .img-container,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .img-container {
+  position: relative;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .block-editor-media-placeholder,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .block-editor-media-placeholder, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .block-editor-media-placeholder,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .block-editor-media-placeholder {
+  height: 100%;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .img-container__image,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .img-container__image, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .img-container__image,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .img-container__image {
+  opacity: 1;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-button,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-button, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-button,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-button {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .trash-icon,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .trash-icon, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .trash-icon,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .trash-icon {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .play-button,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .play-button, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .play-button,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  padding: 10px;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-base-control__help,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-base-control__help, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-base-control__help,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-base-control__help {
+  margin: 0;
+}
+body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-input-control-prefix-wrapper svg,
+body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-input-control-prefix-wrapper svg, .editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block) .wp-block-maxgruson-multimedia-gallery-video .components-input-control-prefix-wrapper svg,
+.editor-styles-wrapper .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout .wp-block-maxgruson-multimedia-gallery-video .components-input-control-prefix-wrapper svg {
+  width: 18px;
+  vertical-align: text-top;
+}
+
+/*# sourceMappingURL=index.css.map*/
