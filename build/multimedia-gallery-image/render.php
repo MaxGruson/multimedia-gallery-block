@@ -15,7 +15,7 @@ $image_id    = $attributes['imageID'] ?? '';
 $image_url   = $attributes['imageURL'] ?? '';
 $description = $attributes['description'] ?? '';
 ?>
-<li <?php echo get_block_wrapper_attributes( array( 'class' => 'multimedia-gallery__item, multimedia-gallery__item--image, splide__slide' ) ); ?>>
+<li <?php echo get_block_wrapper_attributes( array( 'class' => 'multimedia-gallery__item multimedia-gallery__item--image splide__slide' ) ); ?>>
 	<figure>
 		<a
 			class="multimedia-gallery__link no-external-link-indicator"

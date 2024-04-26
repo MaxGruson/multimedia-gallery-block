@@ -14,7 +14,7 @@ namespace MULTIMEDIA_GALLERY_BLOCK;
 $video_url = $attributes['videoURL'] ?? '';
 $description = $attributes['description'] ?? '';
 ?>
-<li <?php echo get_block_wrapper_attributes( array( 'class' => 'multimedia-gallery__item, multimedia-gallery__item--video, splide__slide' ) ); ?>>
+<li <?php echo get_block_wrapper_attributes( array( 'class' => 'multimedia-gallery__item multimedia-gallery__item--video splide__slide' ) ); ?>>
 	<figure>	
 		<a
 			class="multimedia-gallery__link no-external-link-indicator"
