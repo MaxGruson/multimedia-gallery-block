@@ -5,6 +5,7 @@ A block to add a gallery of images and/or YouTube/Vimeo-videos. Media can includ
 ## Installation
 
 Download the latest release and install like you would any other WordPress plugin.
+[Make sure you allow inline SVG elements in your content.](https://mkaz.blog/wordpress/allowing-svg-in-wordpress-content)
 
 ## Usage
 
