@@ -39,15 +39,25 @@ body {
     }
   }
 
+  .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout:has( .block-list-appender:only-child ),
+  .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout:empty
+   {
+    width: 100%;
+    height: 4em;
+    border: solid 1px black;
+  }
+
   .components-placeholder__fieldset {
     flex-basis: 100%;
   }
 
   .block-editor-block-list__block .block-list-appender {
-    top: 50%;
-    right: 1em;
-    bottom: initial;
-    translate: 0 -50%;
+    top: 50% !important;
+    left: 50% !important;
+    right: initial !important;
+    bottom: initial !important;
+    translate: -50% -50% !important;
     width: auto !important;
+    position: absolute !important;
   }
  }

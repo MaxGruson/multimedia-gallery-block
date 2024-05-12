@@ -9,7 +9,7 @@
  * @package maxgruson/multimedia-gallery-block
  */
 
-$inner_block_count = $block->inner_blocks->count();
+$inner_block_count = count( $block->inner_blocks );
 
 if ( $inner_block_count > 1 ) {
 	?>

@@ -40,8 +40,12 @@ document.addEventListener( 'DOMContentLoaded', () => {
   // Lazy load images
   const galleryImages =  document.querySelectorAll( '.wp-block-maxgruson-multimedia-gallery img' );
   galleryImages.forEach( el => {
-    el.addEventListener( 'load', () => {
+    if ( el.complete ) {
       el.style.opacity = 1;
-    } );
+    } else {
+      el.addEventListener( 'load', () => {
+        el.style.opacity = 1;
+      } );
+    }
   } );
 } );
