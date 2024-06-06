@@ -4,7 +4,7 @@
  * Description:       A block to add a gallery of images and/or YouTube/Vimeo-videos.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           1.0.3
+ * Version:           1.0.5
  * Author:            <a href="https://max.gruson.studio" target="_blank">Max Gruson</a>
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,18 +37,26 @@ function image_wrapper( $id = null, $sizes = null, $maxsize = 'full' ) {
 		$sizes = wp_get_attachment_image_sizes( $id, $maxsize );
 	}
 
-	$placeholder = wp_get_attachment_image_src( $id, 'tiny-lazyload-thumbnail' )[0];
-	$src         = wp_get_attachment_image_src( $id, $maxsize )[0];
-	$width       = wp_get_attachment_image_src( $id, $maxsize )[1];
-	$height      = wp_get_attachment_image_src( $id, $maxsize )[2];
-	$srcset      = wp_get_attachment_image_srcset( $id, $maxsize );
-	$alt         = get_post_meta( $id, '_wp_attachment_image_alt', true );
+	if ( wp_get_attachment_image_src( $id ) ) {
+		$placeholder = wp_get_attachment_image_src( $id, 'tiny-lazyload-thumbnail' )[0];
+		$src         = wp_get_attachment_image_src( $id, $maxsize )[0];
+		$width       = wp_get_attachment_image_src( $id, $maxsize )[1];
+		$height      = wp_get_attachment_image_src( $id, $maxsize )[2];
+		$srcset      = wp_get_attachment_image_srcset( $id, $maxsize );
+	}
+
+	$alt = get_post_meta( $id, '_wp_attachment_image_alt', true );
 	?>
 	<div class="img-container" 
-		style="
-			background-image: url(<?php echo esc_attr( $placeholder ); ?>);
-			aspect-ratio: <?php echo $width / $height; ?>;
-		"
+		style="background-image: url(<?php echo esc_attr( $placeholder ); ?>);
+			<?php
+			if ( $width && $height ) {
+				$aspect_ratio = $width / $height;
+			} else {
+				$aspect_ratio = 1;
+			}
+			?>
+			aspect-ratio: <?php echo $aspect_ratio; ?>;"
 	>
 		<img
 			class="img-container__image 

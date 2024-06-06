@@ -19,7 +19,9 @@ $description = $attributes['description'] ?? '';
 	<figure>
 		<a
 			class="multimedia-gallery__link no-external-link-indicator"
-			href="<?php echo esc_url( wp_get_attachment_image_src( $image_id, 'full' )[0] ); ?>"
+			href="<?php if ( wp_get_attachment_image_src( $image_id ) ) {
+					echo esc_url( wp_get_attachment_image_src( $image_id, 'full' )[0] );
+				} ?>"
 			<?php if ( ! empty( $description ) ) { ?>
 			data-glightbox="description: <?php echo esc_attr( wp_kses_post( $description ) ); ?>"
 			<?php } ?>

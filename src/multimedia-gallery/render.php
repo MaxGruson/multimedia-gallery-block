@@ -13,7 +13,7 @@ $inner_block_count = count( $block->inner_blocks );
 
 if ( $inner_block_count > 1 ) {
 	?>
-	<div <?php echo get_block_wrapper_attributes( array( 'class' => 'splide' ) ); ?>>
+	<div <?php echo get_block_wrapper_attributes( array( 'class' => 'splide alignfull' ) ); ?>>
 		<div class="splide__track">
 			<ul class="splide__list multimedia-gallery__list">
 				<?php echo wp_kses_post( $content ); ?>
@@ -23,7 +23,7 @@ if ( $inner_block_count > 1 ) {
 	<?php
 } else {
 	?>
-	<div <?php echo get_block_wrapper_attributes(); ?>>
+	<div <?php echo get_block_wrapper_attributes( array( 'class' => 'alignfull' ) ); ?>>
 		<div>
 			<ul class="multimedia-gallery__list">
 				<?php echo wp_kses_post( $content ); ?>
