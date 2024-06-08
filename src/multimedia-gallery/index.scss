@@ -16,6 +16,10 @@ body {
     figcaption {
       margin: 1em 0 0;
     }
+
+    .multimedia-gallery__item {
+      height: fit-content;
+    }
   }
 
   .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block),

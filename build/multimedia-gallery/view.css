@@ -43,7 +43,7 @@ body .wp-block-maxgruson-multimedia-gallery:not(.splide) .multimedia-gallery__li
   display: inline-block;
 }
 body .wp-block-maxgruson-multimedia-gallery:not(.splide) .img-container {
-  max-height: 80vh;
+  height: max(40rem, 50vh);
 }
 body .wp-block-maxgruson-multimedia-gallery .play-button {
   position: absolute;

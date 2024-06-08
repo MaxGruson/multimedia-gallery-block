@@ -18,6 +18,10 @@ body .wp-block-maxgruson-multimedia-gallery > ul {
 body .wp-block-maxgruson-multimedia-gallery figcaption {
   margin: 1em 0 0;
 }
+body .wp-block-maxgruson-multimedia-gallery .multimedia-gallery__item {
+  height: -moz-fit-content;
+  height: fit-content;
+}
 body .wp-block-maxgruson-multimedia-gallery:not(.block-editor-block-list__block),
 body .wp-block-maxgruson-multimedia-gallery .block-editor-block-list__layout {
   width: -moz-fit-content;

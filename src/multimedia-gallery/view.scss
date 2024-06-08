@@ -45,7 +45,7 @@ body {
         display: inline-block;
       }
       .img-container {
-        max-height: 80vh;
+        height: max( 40rem, 50vh );
       }
     }
 
