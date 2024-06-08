@@ -31,23 +31,16 @@ export default function Edit({attributes, setAttributes}) {
 
 	const {imageID, imageURL} = attributes;
 
-	const thumbnailURL = useSelect( select => {
-		const image = imageID && select( 'core' ).getMedia( imageID );
-		const size = 'tiny-lazyload-thumbnail';
-		return image && image?.media_multimedia?.sizes[size]?.source_url || imageURL;
-	}, [ imageID ] );
-
 	const imageWidth = useSelect( select => {
 		const image = imageID && select( 'core' ).getMedia( imageID );
-		const size = 'large';
-		return image && image?.media_multimedia?.sizes[size]?.width || 0;
+		return image ? image.media_details.width : 0;
 	}, [ imageID ] );
 
 	const imageHeight = useSelect( select => {
 		const image = imageID && select( 'core' ).getMedia( imageID );
-		const size = 'large';
-		return image && image?.media_multimedia?.sizes[size]?.height || 0;
+		return image ? image.media_details.height : 0;
 	}, [ imageID ] );
+
 
 	return (
 		<>
@@ -55,7 +48,7 @@ export default function Edit({attributes, setAttributes}) {
 		<li className='multimedia-gallery__item'>
 			<figure { ...useBlockProps() }>
 				{!!imageID && !!imageURL ? (
-					<div className='img-container' style={{backgroundImage: 'url(' + {thumbnailURL} + ')' }}>
+					<div className='img-container' style={{aspectRatio: imageWidth / imageHeight}}>
 						<img
 							className='img-container__image'
 							width={imageWidth}
