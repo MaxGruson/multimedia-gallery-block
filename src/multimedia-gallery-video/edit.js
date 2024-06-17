@@ -136,7 +136,7 @@ export default function Edit({attributes, setAttributes}) {
 					tagName='figcaption'
 					allowedFormats={ ['core/bold', 'core/italic', 'core/link'] }
 					value={ attributes.description }
-					onChange={ (description) => setAttributes( { description } ) }
+					onChange={ (description) => setAttributes( { description: description } ) }
 					placeholder={ __( 'Omschrijving', 'multimedia-gallery' ) }
 				/>
 			</figure>

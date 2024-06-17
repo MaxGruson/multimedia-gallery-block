@@ -41,7 +41,6 @@ export default function Edit({attributes, setAttributes}) {
 		return image ? image.media_details.height : 0;
 	}, [ imageID ] );
 
-
 	return (
 		<>
 		{/* Main block zone */}
@@ -79,7 +78,7 @@ export default function Edit({attributes, setAttributes}) {
 					tagName='figcaption'
 					allowedFormats={ ['core/bold', 'core/italic', 'core/link'] }
 					value={ attributes.description }
-					onChange={ (description) => setAttributes( { description } ) }
+					onChange={ (description) => setAttributes( { description: description } ) }
 					placeholder={ __( 'Omschrijving', 'multimedia-gallery' ) }
 				/>
 			</figure>
