@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "maxgruson/multimedia-gallery-image",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"title": "Afbeelding",
 	"category": "media",
 	"icon": "format-image",
