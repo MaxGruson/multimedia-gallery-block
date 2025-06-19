@@ -25,8 +25,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
   // Init carousel
   const splides = document.querySelectorAll( '.splide' );
   if(!!splides && splides.length > 0){
+    window.splide = [];
     splides.forEach(splide => {
-      new Splide(splide, {
+      const instance = new Splide(splide, {
         type: 'loop',
         // autoplay: true,
         perPage: 1,
@@ -34,7 +35,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
         gap: '1em',
         heightRatio: 0.5625
       } ).mount();
-    })
+      window.splide.push( instance );
+    } )
   }
 
   // Lazy load images
