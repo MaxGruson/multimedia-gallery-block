@@ -24,6 +24,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
   // Init carousel
   const splides = document.querySelectorAll( '.splide' );
   if(!!splides && splides.length > 0){
+    window.splides = [];
     splides.forEach(splideEl => {
       const splide = new Splide(splideEl, {
         type: 'loop',
@@ -33,6 +34,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
         gap: '1em',
         heightRatio: 0.5625
       } );
+      window.splides.push( splide );
 
       splide.on( 'ready', () => {
         // Init lightbox

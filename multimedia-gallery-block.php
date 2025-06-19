@@ -4,7 +4,7 @@
  * Description:       A block to add a gallery of images and/or YouTube/Vimeo-videos.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           1.0.7
+ * Version:           1.0.8
  * Author:            <a href="https://max.gruson.studio" target="_blank">Max Gruson</a>
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
